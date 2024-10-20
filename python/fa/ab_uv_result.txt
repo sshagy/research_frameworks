@@ -1,0 +1,18 @@
+Server Software:        uvicorn
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /hello
+Document Length:        14 bytes
+
+Concurrency Level:      100
+Time taken for tests:   0.535 seconds
+Complete requests:      6000
+Failed requests:        0
+Total transferred:      834000 bytes
+HTML transferred:       84000 bytes
+Requests per second:    11223.95 [#/sec] (mean)
+Time per request:       8.910 [ms] (mean)
+Time per request:       0.089 [ms] (mean, across all concurrent requests)
+Transfer rate:          1523.56 [Kbytes/sec] received
+
