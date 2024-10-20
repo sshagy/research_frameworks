@@ -1,2 +1,4 @@
 fastapi[standard]
 uvicorn-worker
+hypercorn[h3,trio,uvloop]
+granian

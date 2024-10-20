@@ -34,6 +34,16 @@ run_gc_h11:
 	gunicorn main:app -w 4 -k uvicorn.workers.UvicornH11Worker
 
 
+.PHONY: run_hc
+run_hc:
+	hypercorn main:app -w 4
+
+
+.PHONY: run_gr
+run_gr:
+	granian --interface asgi main:app --workers 4
+
+
 .PHONY: ab
 ab:
 	@ab -n 10000 -c 100 http://127.0.0.1:8000/hello
