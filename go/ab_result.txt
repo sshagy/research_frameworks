@@ -1,0 +1,45 @@
+➜  go git:(main) ✗ make ab     
+This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8090
+
+Document Path:          /hello
+Document Length:        6 bytes
+
+Concurrency Level:      100
+Time taken for tests:   2.602 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      1220000 bytes
+HTML transferred:       60000 bytes
+Requests per second:    3842.95 [#/sec] (mean)
+Time per request:       26.022 [ms] (mean)
+Time per request:       0.260 [ms] (mean, across all concurrent requests)
+Transfer rate:          457.85 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    4   1.2      4       9
+Processing:     1   22  17.5     35      96
+Waiting:        1   21  17.4     34      96
+Total:          3   26  17.4     37     101
+
+Percentage of the requests served within a certain time (ms)
